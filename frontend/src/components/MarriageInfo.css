@@ -1,0 +1,161 @@
+.marriage-certificate {
+  background: white;
+  border: 2px solid var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.decoration-ring {
+  font-size: 3rem;
+  margin: 1rem 0;
+  opacity: 0.2;
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+}
+
+.certificate-body {
+  padding: 0 1rem;
+}
+
+.intro,
+.declaration {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.partner {
+  background-color: #f8f5ff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.partner.you {
+  border-left: 4px solid var(--primary);
+}
+
+.partner.them {
+  border-right: 4px solid var(--secondary);
+}
+
+.partner .label {
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.partner .address {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.and {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin: 0.5rem 0;
+}
+
+.love-message {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #fff9f9;
+  border-radius: 8px;
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.details {
+  margin-top: 2rem;
+  border-top: 1px dashed #ddd;
+  padding-top: 1.5rem;
+}
+
+.detail {
+  display: flex;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.detail .label {
+  font-weight: 600;
+  min-width: 120px;
+  color: var(--primary-dark);
+}
+
+.detail .value {
+  flex: 1;
+  font-family: "Courier New", monospace;
+  word-break: break-all;
+}
+
+.certificate-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signature {
+  margin-top: 1rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* Efecto de certificado auténtico */
+.marriage-certificate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  pointer-events: none;
+}

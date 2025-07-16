@@ -1,0 +1,273 @@
+.marriage-form {
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-family: "Source Serif 4", serif;
+  font-weight: 750;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  font-family: "Source Serif 4", serif;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 650;
+  color: var(--primary-dark);
+}
+
+input {
+  color: #4a2c82; /* Color morado oscuro para el texto ingresado */
+}
+
+/* Para el texto del placeholder (cuando está vacío) */
+input::placeholder {
+  color: #9d50bb; /* Color morado claro */
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(110, 72, 170, 0.2);
+}
+
+.hint {
+  display: block;
+  margin-top: 0.25rem;
+  color: #4a2c82;
+  font-size: 0.8rem;
+}
+
+.submit-button {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: "Source Serif 4", serif;
+  font-weight: 750;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(110, 72, 170, 0.4);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #966b92;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+/* Estilos base para el textarea */
+textarea {
+  color: #4a2c82;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+  resize: vertical;
+  font-family: "Source Serif 4", serif;
+  font-weight: 750;
+}
+
+/* Estados del textarea */
+textarea.empty {
+  color: #9d50bb;
+}
+
+textarea.focus {
+  border-color: #6e48aa;
+  box-shadow: 0 0 0 3px rgba(110, 72, 170, 0.2);
+}
+
+textarea.typing {
+  color: #2a0845;
+  border-color: #6e48aa;
+}
+
+textarea.warning {
+  color: #d48806;
+  border-color: #ffc107;
+}
+
+textarea.valid {
+  color: #28a745;
+  border-color: #9b0027;
+}
+
+/* Estilos para el contador de caracteres */
+.hint.warning {
+  color: #d48806;
+  font-weight: bold;
+}
+
+.hint.danger {
+  color: #dc3545;
+  font-weight: bold;
+}
+/* Estilos específicos para el placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #9d50bb; /* Morado claro */
+  opacity: 0.7; /* Transparencia */
+  font-style: italic; /* Cursiva */
+  font-size: 0.9em; /* Tamaño ligeramente menor */
+}
+
+/* Cuando el input está enfocado */
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #6e48aa; /* Morado más oscuro */
+  opacity: 0.5;
+}
+
+/* Estilo para cuando hay error */
+input.error::placeholder {
+  color: #ff6b6b; /* Rojo suave */
+}
+/* Placeholder normal */
+input::placeholder {
+  color: #9d50bb;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder cuando el input tiene contenido válido */
+input.valid::placeholder {
+  color: #4a2c82;
+}
+
+/* Placeholder cuando hay error */
+input.invalid::placeholder {
+  color: #ff6b6b;
+}
+/* Estilos para la sección de pago */
+.payment-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f9f5ff;
+  border-radius: 12px;
+  border: 1px solid #e9e0ff;
+}
+
+.payment-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #4a2c82;
+  font-size: 1.2rem;
+}
+
+.dai-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.dai-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dai-row span:first-child {
+  font-weight: 500;
+  color: #6e48aa;
+}
+
+.dai-row.status {
+  padding-top: 0.8rem;
+  border-top: 1px dashed #d0b3ff;
+  margin-top: 0.5rem;
+}
+
+.approved {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.pending {
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.approve-button {
+  background: #6e48aa;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.approve-button:hover:not(:disabled) {
+  background: #5a3a8a;
+  transform: translateY(-1px);
+}
+
+.approve-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Mejoras para los mensajes de validación */
+.hint.error {
+  color: #dc3545;
+}
+
+.hint.warning {
+  color: #ffc107;
+}
+
+input.invalid {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+input.invalid:focus {
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.2);
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

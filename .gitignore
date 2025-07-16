@@ -1,0 +1,40 @@
+# Environment variables
+.env
+**/.env
+src/**/.env
+
+# Node modules
+**/node_modules
+
+# Dist
+**/dist
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencias
+node_modules/
+
+# Artefactos de compilación de Hardhat
+artifacts/
+cache/
+
+# Archivos de despliegue de Ignition
+# A veces es útil subirlos, pero si contienen datos sensibles, mejor no.
+# ignition/deployments/
+
+# Archivos de build de Next.js
+.next/
+out/
+
+# Archivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
