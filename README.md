@@ -17,7 +17,9 @@
 
 ## ¿Cómo Probar el Proyecto?
 
-Entrar a: love-on-chain-tfko-git-master-diego27zs-projects.vercel.app
+Entrar a: 
+
+```https://love-on-chain-tfko-git-master-diego27zs-projects.vercel.app``` (me di cuenta tarde que en produccion no conecta la wallet automaticamente :c, en local si)
 
 
 si no:
