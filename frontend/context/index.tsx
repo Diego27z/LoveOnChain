@@ -5,8 +5,10 @@
 // Importamos la configuración ya hecha desde el archivo config
 import { wagmiAdapter } from "../config";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { createAppKit } from "@reown/appkit/react";
+import { baseSepolia } from "@reown/appkit/networks";
 import React, { type ReactNode } from "react";
-import { cookieToInitialState, WagmiProvider, type Config } from "wagmi";
+import { WagmiProvider, type Config } from "wagmi";
 
 // Set up queryClient
 const queryClient = new QueryClient();
@@ -18,7 +20,6 @@ function ContextProvider({
   children,
 }: {
   children: ReactNode;
-  cookies: string | null;
 }) {
 
 
