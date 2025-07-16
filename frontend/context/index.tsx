@@ -16,22 +16,16 @@ const queryClient = new QueryClient();
 
 function ContextProvider({
   children,
-  cookies,
 }: {
   children: ReactNode;
   cookies: string | null;
 }) {
-  const initialState = cookieToInitialState(
-    wagmiAdapter.wagmiConfig as Config,
-    cookies
-  );
+
 
   // El componente se simplifica mucho, solo provee los contextos
-  return (
-    <WagmiProvider
-      config={wagmiAdapter.wagmiConfig as Config}
-      initialState={initialState}
-    >
+ return (
+    // 3. Llama a WagmiProvider sin 'initialState'
+    <WagmiProvider config={wagmiAdapter.wagmiConfig as Config}>
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </WagmiProvider>
   );
