@@ -23,7 +23,7 @@
    - Git
 
 **2. Clonar el Repositorio:**
-   ```bash
+   bash
    git clone https://github.com/tu-usuario/love-on-chain.git
    cd love-on-chain
 
