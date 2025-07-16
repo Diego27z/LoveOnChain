@@ -24,8 +24,8 @@
 
 **2. Clonar el Repositorio:**
    bash
-   git clone https://github.com/tu-usuario/love-on-chain.git
-   cd love-on-chain
+   ```git clone https://github.com/tu-usuario/love-on-chain.git```
+   ```cd love-on-chain```
 
 
 3. Instalar Dependencias:
@@ -33,7 +33,7 @@ Este comando instalará las dependencias tanto para el contract como para el fro
 
 Generated bash
 # Desde la raíz del proyecto
-npm install && (cd contract && npm install) && (cd frontend && npm install)
+```npm install && (cd contract && npm install) && (cd frontend && npm install)```
 IGNORE_WHEN_COPYING_START
 content_copy
 download
@@ -48,8 +48,8 @@ El proyecto ya está configurado para usar los contratos que he desplegado. Las 
 Desde la carpeta frontend, inicia el servidor de desarrollo.
 
 Generated bash
-cd frontend
-npm run dev
+```cd frontend```
+```npm run dev```
 IGNORE_WHEN_COPYING_START
 content_copy
 download
