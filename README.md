@@ -34,12 +34,6 @@ Este comando instalará las dependencias tanto para el contract como para el fro
 Generated bash
 # Desde la raíz del proyecto
 ```npm install && (cd contract && npm install) && (cd frontend && npm install)```
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Bash
-IGNORE_WHEN_COPYING_END
 
 4. Configurar el Frontend:
 El proyecto ya está configurado para usar los contratos que he desplegado. Las direcciones se encuentran en frontend/src/contracts/addresses.js. No necesitas desplegar tu propio contrato para probar el frontend.
@@ -50,12 +44,6 @@ Desde la carpeta frontend, inicia el servidor de desarrollo.
 Generated bash
 ```cd frontend```
 ```npm run dev```
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Bash
-IGNORE_WHEN_COPYING_END
 
 Abre http://localhost:3000 y sigue los mismos pasos de configuración de MetaMask del Método 1.
 
@@ -71,11 +59,3 @@ divorce(): Marca una unión como inactiva.
 setMarriageFee(uint256): Función administrativa para el dueño.
 
 withdrawTokens(): Función administrativa para el dueño.
-
-
-Generated code
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
