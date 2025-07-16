@@ -19,7 +19,7 @@
 
 Entrar a: 
 
-```https://love-on-chain-tfko-git-master-diego27zs-projects.vercel.app``` (me di cuenta tarde que en produccion no conecta la wallet automaticamente :c, en local si)
+```https://love-on-chain-tfko-git-master-diego27zs-projects.vercel.app``` (me di cuenta tarde que en produccion no conecta la wallet automaticamente :c, en local sí)
 
 
 si no:
