@@ -23,7 +23,7 @@ export default function MarriageDetails({ details, onDivorce }) {
         <p>
           <strong>Vuestro Mensaje:</strong>
         </p>
-        <blockquote>&ldquo;{details.message}&rdquo;</blockquote>
+        <blockquote>“{details.message}”</blockquote>
       </div>
       <button onClick={onDivorce} className="button-danger">
         Solicitar Divorcio
