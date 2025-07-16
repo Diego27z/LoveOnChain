@@ -1,31 +1,14 @@
+// frontend/src/app/layout.tsx
+
 import type { Metadata } from "next";
-import { headers } from "next/headers";
-
-
+// 1. ELIMINA la importación de 'headers'
+// import { headers } from "next/headers"; 
 import "./globals.css";
-
 import ContextProvider from "../../context";
 
 export const metadata: Metadata = {
-  title: "LoveOnChain",
-  description: "Un registro matrimonial descentralizado",
-  openGraph: {
-    title: "Frontend web3 hackathon starter",
-    description: "Frontend web3 hackathon starter",
-    url: "https://frontend-web3-hackathon-starter.vercel.app",
-    siteName: "Frontend web3 hackathon starter",
-    type: "website",
-    images: [
-      {
-        url: "assets/cover.jpg",
-        alt: "Frontend web3 hackathon starter",
-      },
-    ],
-  },
-  icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
-  },
+  title: "LoveOnChain DApp",
+  description: "Un registro matrimonial en la blockchain de Base.",
 };
 
 export default function RootLayout({
@@ -33,13 +16,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookieStore = headers();
-  const cookies = cookieStore.toString();
+  // 2. ELIMINA estas líneas que usan headers()
+  // const cookieStore = headers();
+  // const cookies = cookieStore.toString();
 
   return (
     <html lang="en">
       <body className="antialiased">
-        <ContextProvider cookies={cookies}>{children}</ContextProvider>
+        {/* 3. Llama a ContextProvider sin la prop 'cookies' */}
+        <ContextProvider>{children}</ContextProvider>
       </body>
     </html>
   );
