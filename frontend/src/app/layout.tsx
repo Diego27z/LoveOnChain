@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
-import { createConfig, http } from "wagmi";
-import { mainnet, sepolia, polygon, baseSepolia } from "wagmi/chains";
 
-const config = createConfig({
-  chains: [mainnet, sepolia, polygon, baseSepolia],
-  transports: {
-    [mainnet.id]: http(),
-    [sepolia.id]: http(),
-    [polygon.id]: http(),
-    [baseSepolia.id]: http(),
-  },
-});
 
 import "./globals.css";
 
