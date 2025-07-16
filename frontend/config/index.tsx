@@ -9,7 +9,7 @@ import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 import { base, baseSepolia } from "@reown/appkit/networks";
 
 // Get projectId from https://cloud.walletconnect.com
-export const projectId = "0febfada86f766656d6951d1cb6c6c54";
+export const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
 
 if (!projectId) {
   throw new Error("Project ID is not defined");
